@@ -62,7 +62,7 @@ namespace XamarinCryptoSpeed
 			button.Click += delegate {
 				// do nothing, no added support library for elliptic curves :{
 				// KEyPairGenerator throws NoSuchAlgorithmException in getInstanceMethod("ECDSA");
-				SignatureEllipticCurves.testEC("prime256v1", Application.Context);
+				// SignatureEllipticCurves.testEC("prime256v1", Application.Context);
 			};
 		}
 			

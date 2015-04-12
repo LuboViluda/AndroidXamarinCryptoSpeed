@@ -23,7 +23,8 @@ namespace XamarinCryptoSpeed
 			double[] verifyTime = new double[SIG_REPETITION];
 			double sumSign = 0;
 			double sumVerify = 0;
-			StringBuilder buffer = new StringBuilder();
+			StringBuilder bufferSign = new StringBuilder();
+			StringBuilder bufferVerify = new StringBuilder();
 			CommonAuxiliaryCode.GenerateDummyBytes(b1);
 
 			for(int i =0; i < SIG_REPETITION; i++)
@@ -49,7 +50,8 @@ namespace XamarinCryptoSpeed
 						verifyTime[i] =  (((double) endVerify / 10000.0) - ((double) startVerify)/ 10000.0);
 						sumVerify += verifyTime[i];
 						Log.Info(Constants.TAG, sign.Algorithm + " attempt : " + i + " ended successful time sign: " + signTime[i] + " verify : " + verifyTime[i]);
-						buffer.Append(signTime[i] + "," + verifyTime[i] + "\n");
+						bufferSign.Append(signTime[i] + ",");
+						bufferVerify.Append(verifyTime[i] + ",");
 					}
 					else
 					{   // shoudn't happen, skipp test
@@ -68,10 +70,13 @@ namespace XamarinCryptoSpeed
 			}
 			double encR =  sumSign / ((double) SIG_REPETITION);
 			double decR =  sumVerify / ((double) SIG_REPETITION);
-			buffer.Append("Test " + sign.Algorithm + " by provider: " + sign.Provider + " ended succesfully");
-			buffer.Append("\n Averange values: " + encR + "," + decR);
+			Log.Info(Constants.TAG, "Test " + sign.Algorithm + " by provider: " + sign.Provider + " ended succesfully");
+			Log.Info(Constants.TAG, "Averange values: " + encR + "," + decR);
 			Toast.MakeText(appContext, "SIGN time: " + encR + " VERIFY time: " + decR, ToastLength.Short ).Show();
-			CommonAuxiliaryCode.WriteToFile(sign.Algorithm + "." + keySize + "." + SIG_SIZE + "x" + SIG_REPETITION  +".txt", buffer.ToString());
+			CommonAuxiliaryCode.WriteToFile(sign.Algorithm + ".S." + keySize + "." + SIG_SIZE + "x" 
+											+ SIG_REPETITION  +".csv", bufferSign.ToString());
+			CommonAuxiliaryCode.WriteToFile(sign.Algorithm + ".V." + keySize + "." + SIG_SIZE + "x" 
+											+ SIG_REPETITION  +".csv", bufferVerify.ToString());
 		}
 	}
 }

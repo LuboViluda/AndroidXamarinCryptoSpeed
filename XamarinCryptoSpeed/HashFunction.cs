@@ -46,9 +46,9 @@ namespace XamarinCryptoSpeed
 			}
 			double hashAvr = hashSum / ((double) repetions);
 			Log.Info(Constants.TAG, "Test " + algorithmName + " finished, avrg. time : " + hashAvr);
-			buffer.Append("\n" + "Test " + algorithmName + " by provider: " + md.Provider + "with file size: " +  + testFileSize + " bytes x times: " + repetions);
-			buffer.Append(" ended succesfully\n Averange values: " + hashAvr);
-			CommonAuxiliaryCode.WriteToFile(algorithmName + "." + testFileSize + "x" + repetions + ".txt", buffer.ToString());
+			Log.Info(Constants.TAG, "Test " + algorithmName + " by provider: " + md.Provider + "with file size: " +  + testFileSize + " bytes x times: " + repetions);
+			Log.Info(Constants.TAG, "ended succesfully\n Averange values: " + hashAvr);
+			CommonAuxiliaryCode.WriteToFile(algorithmName + "." + testFileSize + "x" + repetions + ".csv", buffer.ToString());
 		}
 	}
 }

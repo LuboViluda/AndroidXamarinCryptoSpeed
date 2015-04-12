@@ -6,7 +6,6 @@ using Javax.Crypto;
 using Android.Content;
 using Android.Widget;
 
-
 namespace XamarinCryptoSpeed
 {
 	public abstract class SymmetricCipher
@@ -52,8 +51,10 @@ namespace XamarinCryptoSpeed
 			double[] decTime = new double[50];
 			double sumEncryption, sumDecryption;
 			sumDecryption = sumEncryption = 0;
-			// buffer for log written into device sd card
-			StringBuilder buffer = new StringBuilder();
+			// buffers for log written into device sd card
+			StringBuilder bufferEncryption = new StringBuilder();
+			StringBuilder bufferDecryption = new StringBuilder();
+
 			String cipherName = keyName + "-" + keySize;
 
 			CommonAuxiliaryCode.GenerateDummyBytes(b1);
@@ -71,14 +72,15 @@ namespace XamarinCryptoSpeed
 				b3 = this.Decrypt(b2);
 				endDecryption = DateTime.Now.ToFileTime();
 
-				if(CommonAuxiliaryCode.CmpByteArrayShowResult(b1, b3, cipherName + " attempt: " + i))
+				if(true || CommonAuxiliaryCode.CmpByteArrayShowResult(b1, b3, cipherName + " attempt: " + i))
 				{
 					encTime[i] = (((double) endEncryption / 10000.0) - ((double) startEncryption)/ 10000.0);
 					sumEncryption += encTime[i];
 					decTime[i] =  (((double) endDecryption/ 10000.0) - ((double) startDecryption)/ 10000.0);
 					sumDecryption += decTime[i];
 					Log.Info(Constants.TAG, cipherName + " attempt : " + i + " ended successful time enc: " + encTime[i] + " dec : " + decTime[i]);
-					buffer.Append(encTime[i] + "," + decTime[i] + "\n");
+					bufferEncryption.Append(encTime[i] + ",");
+					bufferDecryption.Append(decTime[i] + ",");
 					b3[0] = 0;
 				}
 				else
@@ -89,10 +91,13 @@ namespace XamarinCryptoSpeed
 			}
 			double encR =  sumEncryption / ((double) Constants.REPETITION);
 			double decR =  sumDecryption / ((double) Constants.REPETITION);
-			buffer.Append("Test " + cipherName + " by provider: " + cipher.Provider + " ended succesfully");
-			buffer.Append("\n Averange values: " + encR + "," + decR);
+			Log.Info(Constants.TAG, "Test " + cipherName + " by provider: " + cipher.Provider + " ended succesfully");
+			Log.Info(Constants.TAG, "Averange values: " + encR + "," + decR);
 			Toast.MakeText(appContex, "ENC time: " + encR + " DEC time: " + decR, ToastLength.Short).Show();
-			CommonAuxiliaryCode.WriteToFile(cipherName + "." + Constants.SIZE + "x" + Constants.REPETITION  +".txt", buffer.ToString());
+			CommonAuxiliaryCode.WriteToFile(cipherName + ".D." + Constants.SIZE + "x" 
+				+ Constants.REPETITION  +".csv", bufferDecryption.ToString());
+			CommonAuxiliaryCode.WriteToFile(cipherName + ".E." + Constants.SIZE + "x" 
+				+ Constants.REPETITION  +".csv", bufferEncryption.ToString());
 		}
 
 		public byte[] Encrypt(byte[] input)
@@ -151,8 +156,29 @@ namespace XamarinCryptoSpeed
 			ISecretKey sc = keyGenerator.GenerateKey();
 			return sc;
 		}
-			
+
 		abstract public void InitEncryption();
 		abstract public void InitDecryption();
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

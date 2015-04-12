@@ -23,7 +23,7 @@ namespace XamarinCryptoSpeed
 			try 
 			{
 				// 1 encyption mode
-				cipher.Init(CipherMode.EncryptMode, ((IKey) secretKey));
+				cipher.Init(CipherMode.EncryptMode, ((IKey) secretKey), ivSpec);
 			} 
 			catch (InvalidKeyException e) 
 			{
@@ -40,7 +40,7 @@ namespace XamarinCryptoSpeed
 			try 
 			{
 				// 2 decyption mode
-				cipher.Init(CipherMode.DecryptMode, ((IKey) this.secretKey));
+				cipher.Init(CipherMode.DecryptMode, ((IKey) this.secretKey), ivSpec);
 			} 
 			catch (InvalidKeyException e) 
 			{
