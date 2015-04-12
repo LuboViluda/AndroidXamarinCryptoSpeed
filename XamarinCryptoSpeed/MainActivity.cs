@@ -58,6 +58,12 @@ namespace XamarinCryptoSpeed
 				SignatureRSA.test("SHA1withRSA", 2048, Application.Context);
 			};
 
+			button = FindViewById<Button>(Resource.Id.ECtestButton);
+			button.Click += delegate {
+				// do nothing, no added support library for elliptic curves :{
+				// KEyPairGenerator throws NoSuchAlgorithmException in getInstanceMethod("ECDSA");
+				SignatureEllipticCurves.testEC("prime256v1", Application.Context);
+			};
 		}
 			
 	}

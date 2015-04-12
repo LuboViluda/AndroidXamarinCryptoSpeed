@@ -69,6 +69,9 @@ namespace XamarinCryptoSpeed
 			// aapt resource value: 0x7f050002
 			public const int ARC4Button = 2131034114;
 			
+			// aapt resource value: 0x7f050007
+			public const int ECtestButton = 2131034119;
+			
 			// aapt resource value: 0x7f050003
 			public const int MD5Button = 2131034115;
 			

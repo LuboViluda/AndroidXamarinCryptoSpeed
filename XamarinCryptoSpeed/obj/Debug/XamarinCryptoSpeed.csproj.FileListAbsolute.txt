@@ -15,3 +15,4 @@ C:\Users\Lubo\Documents\Projects\XamarinCryptoSpeed\XamarinCryptoSpeed\obj\Debug
 C:\Users\Lubo\Documents\Projects\XamarinCryptoSpeed\XamarinCryptoSpeed\obj\Debug\res\drawable-xxxhdpi\icon.png
 C:\Users\Lubo\Documents\Projects\XamarinCryptoSpeed\XamarinCryptoSpeed\obj\Debug\R.cs.flag
 C:\Users\Lubo\Documents\Projects\XamarinCryptoSpeed\XamarinCryptoSpeed\obj\Debug\uploadflags.txt
+C:\Users\Lubo\Documents\Projects\XamarinCryptoSpeed\XamarinCryptoSpeed\obj\Debug\XamarinCryptoSpeed.csprojResolveAssemblyReference.cache

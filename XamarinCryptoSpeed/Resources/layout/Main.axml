@@ -41,4 +41,10 @@
         android:layout_height="wrap_content"
         android:text="SHA-1-RSA-2048"
         android:textAllCaps="true" />
+    <Button
+        android:id="@+id/ECtestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EC test"
+        android:textAllCaps="true" />
 </LinearLayout>
