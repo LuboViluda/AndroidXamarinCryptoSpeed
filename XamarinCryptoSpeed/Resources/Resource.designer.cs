@@ -63,6 +63,24 @@ namespace XamarinCryptoSpeed
 			// aapt resource value: 0x7f050000
 			public const int AES128Button = 2131034112;
 			
+			// aapt resource value: 0x7f050001
+			public const int AES256Button = 2131034113;
+			
+			// aapt resource value: 0x7f050002
+			public const int ARC4Button = 2131034114;
+			
+			// aapt resource value: 0x7f050003
+			public const int MD5Button = 2131034115;
+			
+			// aapt resource value: 0x7f050004
+			public const int SHA1Button = 2131034116;
+			
+			// aapt resource value: 0x7f050005
+			public const int SHA1withRSA1024Button = 2131034117;
+			
+			// aapt resource value: 0x7f050006
+			public const int SHA1withRSA2048Button = 2131034118;
+			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

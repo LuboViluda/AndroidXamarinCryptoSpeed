@@ -2,9 +2,10 @@
 using System.Linq;
 using Java.Security;
 using Android.Util;
-using Java.IO;
 using Java.Security.Cert;
 using Javax.Crypto;
+
+using System.IO;
 
 namespace XamarinCryptoSpeed
 {
@@ -26,12 +27,7 @@ namespace XamarinCryptoSpeed
 		{
 			try 
 			{
-				File outputFile = new File("/sdcard/" + filename);
-				FileWriter fWriter;
-				fWriter = new FileWriter(outputFile, true);
-				fWriter.Write(data);
-				fWriter.Flush();
-				fWriter.Close();
+				File.AppendAllText("/storage/emulated/0/Xamarin_" + filename, data);
 			}
 			catch (IOException e) 
 			{

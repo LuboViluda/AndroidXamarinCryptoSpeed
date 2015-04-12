@@ -42,6 +42,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
+    <Reference Include="CGenT.Bouncy">
+      <HintPath>..\packages\CGenT.Bouncy.1.8.5548.41731\lib\portable-net45+sl50+win+wpa81+wp80\CGenT.Bouncy.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -51,11 +54,16 @@
     <Compile Include="CommonAuxiliaryCode.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="SymmetricBlockCipher.cs" />
+    <Compile Include="SymmetricStreamCipher.cs" />
+    <Compile Include="HashFunction.cs" />
+    <Compile Include="Signature.cs" />
+    <Compile Include="SignatureRSA.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
