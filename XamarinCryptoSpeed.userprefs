@@ -1,34 +1,27 @@
 ﻿<Properties StartupItem="XamarinCryptoSpeed\XamarinCryptoSpeed.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.727f9ac0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinCryptoSpeed\MainActivity.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Default_Nexus_5" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="c:\Users\Lubo\Documents\Projects\XamarinCryptoSpeed\XamarinCryptoSpeed\SymmetricCipher.cs">
     <Files>
-      <File FileName="XamarinCryptoSpeed\MainActivity.cs" Line="69" Column="3" />
-      <File FileName="XamarinCryptoSpeed\SignatureEllipticCurves.cs" Line="23" Column="1" />
-      <File FileName="XamarinCryptoSpeed\SignatureRSA.cs" Line="87" Column="4" />
-      <File FileName="XamarinCryptoSpeed\SymmetricBlockCipher.cs" Line="4" Column="1" />
-      <File FileName="XamarinCryptoSpeed\SymmetricCipher.cs" Line="73" Column="1" />
+      <File FileName="XamarinCryptoSpeed\MainActivity.cs" Line="29" Column="29" />
+      <File FileName="XamarinCryptoSpeed\CommonAuxiliaryCode.cs" Line="28" Column="2" />
+      <File FileName="c:\Users\Lubo\Documents\Projects\XamarinCryptoSpeed\XamarinCryptoSpeed\SymmetricCipher.cs" Line="92" Column="61" />
+      <File FileName="XamarinCryptoSpeed\Signature.cs" Line="79" Column="51" />
+      <File FileName="XamarinCryptoSpeed\SymmetricBlockCipher.cs" Line="42" Column="24" />
       <File FileName="XamarinCryptoSpeed\SymmetricStreamCipher.cs" Line="1" Column="1" />
-      <File FileName="XamarinCryptoSpeed\Signature.cs" Line="39" Column="5" />
-      <File FileName="XamarinCryptoSpeed\CommonAuxiliaryCode.cs" Line="44" Column="5" />
-      <File FileName="XamarinCryptoSpeed\Constants.cs" Line="8" Column="37" />
-      <File FileName="XamarinCryptoSpeed\HashFunction.cs" Line="32" Column="6" />
+      <File FileName="XamarinCryptoSpeed\SignatureRSA.cs" Line="87" Column="4" />
+      <File FileName="XamarinCryptoSpeed\SignatureEllipticCurves.cs" Line="23" Column="1" />
+      <File FileName="XamarinCryptoSpeed\HashFunction.cs" Line="10" Column="37" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="XamarinCryptoSpeed" expanded="True">
-            <Node name="MainActivity.cs" selected="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="C:\Users\Lubo\Documents\Projects\XamarinCryptoSpeed\XamarinCryptoSpeed\SymmetricStreamCipher.cs" line="18" column="1" />
       <Breakpoint file="C:\Users\Lubo\Documents\Projects\XamarinCryptoSpeed\XamarinCryptoSpeed\SignatureEllipticCurves.cs" line="18" column="46" />
+      <Breakpoint file="C:\Users\Lubo\Documents\Projects\XamarinCryptoSpeed\XamarinCryptoSpeed\CommonAuxiliaryCode.cs" line="28" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="c:\Users\Lubo\Documents\Projects\XamarinCryptoSpeed\XamarinCryptoSpeed\SymmetricCipher.cs" line="76" offsetX="767" offsetY="1200" expression="b1" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
   <MonoDevelop.Ide.ItemProperties.XamarinCryptoSpeed AndroidDesignerPreferredDevice="Nexus 4" />
 </Properties>
