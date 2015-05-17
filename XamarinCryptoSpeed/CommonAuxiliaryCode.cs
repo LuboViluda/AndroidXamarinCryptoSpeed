@@ -35,6 +35,12 @@ namespace XamarinCryptoSpeed
 			}
 		}
 
+		public static String ReadFile(String filename)
+		{
+			return File.ReadAllText(filename);
+		}
+
+
 		public static KeyStore.PrivateKeyEntry GetPrivateKeyEntry(String alias)  
 		{
 			try

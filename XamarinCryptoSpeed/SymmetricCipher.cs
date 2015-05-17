@@ -72,7 +72,7 @@ namespace XamarinCryptoSpeed
 				b3 = this.Decrypt(b2);
 				endDecryption = DateTime.Now.ToFileTime();
 
-				if(true || CommonAuxiliaryCode.CmpByteArrayShowResult(b1, b3, cipherName + " attempt: " + i))
+				if(CommonAuxiliaryCode.CmpByteArrayShowResult(b1, b3, cipherName + " attempt: " + i))
 				{
 					encTime[i] = (((double) endEncryption / 10000.0) - ((double) startEncryption)/ 10000.0);
 					sumEncryption += encTime[i];

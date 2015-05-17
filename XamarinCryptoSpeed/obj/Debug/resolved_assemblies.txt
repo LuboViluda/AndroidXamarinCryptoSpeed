@@ -1,1 +1,1 @@
-C:\Users\Lubo\Documents\Projects\XamarinCryptoSpeed\XamarinCryptoSpeed\bin\Debug\XamarinCryptoSpeed.dll
+C:\Users\Lubo\Documents\Projects\XamarinAndroidCryptoSpeed\XamarinCryptoSpeed\bin\Debug\XamarinCryptoSpeed.dll
