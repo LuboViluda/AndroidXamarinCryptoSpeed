@@ -1,0 +1,24 @@
+﻿<Properties StartupItem="XamarinCryptoSpeed\XamarinCryptoSpeed.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Default_Nexus_5" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinCryptoSpeed\CommonAuxiliaryCode.cs">
+    <Files>
+      <File FileName="XamarinCryptoSpeed\SymmetricBlockCipher.cs" Line="1" Column="1" />
+      <File FileName="XamarinCryptoSpeed\Constants.cs" Line="1" Column="1" />
+      <File FileName="XamarinCryptoSpeed\Signature.cs" Line="1" Column="1" />
+      <File FileName="c:\Users\Lubo\Documents\Projects\XamarinCryptoSpeed\XamarinCryptoSpeed\SymmetricCipher.cs" Line="1" Column="1" />
+      <File FileName="XamarinCryptoSpeed\MainActivity.cs" Line="54" Column="38" />
+      <File FileName="XamarinCryptoSpeed\HashFunction.cs" Line="1" Column="1" />
+      <File FileName="XamarinCryptoSpeed\CommonAuxiliaryCode.cs" Line="28" Column="48" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\Lubo\Documents\Projects\XamarinCryptoSpeed\XamarinCryptoSpeed\SignatureEllipticCurves.cs" line="18" column="46" />
+      <Breakpoint file="C:\Users\Lubo\Documents\Projects\XamarinCryptoSpeed\XamarinCryptoSpeed\CommonAuxiliaryCode.cs" line="34" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="c:\Users\Lubo\Documents\Projects\XamarinCryptoSpeed\XamarinCryptoSpeed\SymmetricCipher.cs" line="76" offsetX="767" offsetY="1200" expression="b1" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.ItemProperties.XamarinCryptoSpeed AndroidDesignerPreferredDevice="Nexus 4" />
+</Properties>
